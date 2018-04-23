@@ -5,8 +5,7 @@ function init() {
   let count = 0;
   console.log("Started")
   document.body.addEventListener("keydown", (e) => {
-    console.log(e.which);
-    if(e.which===code[count]){
+    if(e.location===code[count]){
       count++;
     }
     else{
