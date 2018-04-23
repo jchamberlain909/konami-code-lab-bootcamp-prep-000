@@ -4,7 +4,12 @@ function init() {
   // Write your JavaScript code inside the init() function
   let count = 0;
   document.body.addEventListener("keydown", (e) => {
-    if(e.which)
+    if(e.which===code[count]){
+      count++;
+    }
+    if(count===10){
+      alert("Congrats");
+    }
   })
 
 }
