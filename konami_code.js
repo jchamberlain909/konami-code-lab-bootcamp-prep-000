@@ -9,6 +9,9 @@ function init() {
     if(e.which===code[count]){
       count++;
     }
+    else{
+      count=0;
+    }
     if(count===10){
       alert("Congrats");
     }
